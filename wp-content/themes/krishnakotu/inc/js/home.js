@@ -5,14 +5,15 @@ var $ = jQuery.noConflict();
 
 
 $(document).ready(function () {
-
+    var resizeTimer;
     $("#nav-toggle").click(function () {
         console.log("clicked")
         $("#nav-toggle, #nav-overlay, #nav-fullscreen").toggleClass("open");
         $("header.home-header").toggleClass("open");
     });
 
-    $('.full-page-sections').fullpage({
+
+    var fullpageConfig = {
         navigation: false,
         responsiveWidth: 320,
         autoScrolling: true,
@@ -25,16 +26,22 @@ $(document).ready(function () {
         sectionSelector: '.section',
         slideSelector: '.slide',
         afterLoad: function (anchorLink, index) {}
-    });
+    };
+
+    if (!$("html").hasClass("fp-enabled")) {
+        $('.full-page-sections').fullpage(fullpageConfig);
+    }
+
+    domResetOnResize();
+    resizeNav();
 
     /*********** reinitializing full page js for mobile / laptop based on width ************/
     /*Start*/
-    var resizeTimer; //iPhone 6+ landscape width
-    resizeNav();
     $(window).resize(function () {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function () {
 //            console.log("Resized");
+            domResetOnResize();
             resizeNav();
         }, 500);
     });
@@ -42,6 +49,11 @@ $(document).ready(function () {
 
 });
 
+function domResetOnResize() {
+    if ($("html").hasClass("fp-enabled")) {
+        $.fn.fullpage.reBuild();
+    }
+}
 
 function resizeNav() {
     var $navOverlay = $("#nav-overlay"),

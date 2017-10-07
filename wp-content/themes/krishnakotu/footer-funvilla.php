@@ -1,5 +1,5 @@
         <!-- Home Footer -->
-        <section class="section pro-sections contact" data-anchor="contact">
+       <section class="section pro-sections contact" data-anchor="contact">
             <div class="footerInfo h-75">
                 <div class="container h-100 text-center">
                     <div class="row h-100">
@@ -36,14 +36,13 @@
                         </div>
                     </div>
             -->
-                       <div class="col-12 text-center align-self-end">Krishna Chaitanya</div>
+                      <div class="col-12 text-center align-self-end">Funvilla's</div>
                         <div class="align-self-center col-12 footer-social py-3 text-center">
-                            <a class="facebook" href="https://www.facebook.com/profile.php?id=100014737955486" target="_blank"><span class="fa fa-facebook-square"></span></a>
-                            <a class="twitter" href="https://twitter.com/chaitugymnast" target="_blank"><span class="fa fa-twitter"></span></a>
-                            <a class="google-plus" href="https://plus.google.com/112738772334603216029" target="_blank"><span class="fa fa-google-plus"></span></a>
-                            <a class="instagram" href="https://www.instagram.com/chaitanyagymnast2009" target="_blank"><span class="fa fa-instagram"></span></a>
-                            <a class="youtube" href="https://www.youtube.com/channel/UCHIf6lNA62vy0UgEHHwupoQ" target="_blank"><span class="fa fa-youtube-play"></span></a>
-                            <a class="linkedin" href="https://www.linkedin.com/in/krishna-chaitanya-kotu-54178b2b" target="_blank"><span class="fa fa-linkedin"></span></a>
+                            <a class="facebook" href="https://www.facebook.com/pg/FunvillaOutlet" target="_blank"><span class="fa fa-facebook-square"></span></a>
+                            <a class="twitter" href="https://twitter.com/FunvillaOutlet" target="_blank"><span class="fa fa-twitter"></span></a>
+                            <a class="google-plus" href="https://plus.google.com/100447702050827115047" target="_blank"><span class="fa fa-google-plus"></span></a>
+                            <a class="instagram" href="https://www.instagram.com/FunvillaOutlet" target="_blank"><span class="fa fa-instagram"></span></a>
+                            <a class="youtube" href="https://www.youtube.com/channel/UCCAKllsMYWYIYFiLDPI9Bxw" target="_blank"><span class="fa fa-youtube-play"></span></a>
                         </div>
                         <div class="col-12 text-center">Copyright 2017</div>
                     </div>
@@ -54,10 +53,11 @@
 </section>
 <?php wp_footer(); ?>
 <script>
-window.onload = function(){
-jQuery(".spinner").fadeOut();
-jQuery("body").removeClass("spinner-scroll");
-}
+    jQuery("title").html("Funvilla's");
+    window.onload = function(){
+        jQuery(".spinner").fadeOut();
+        jQuery("body").removeClass("spinner-scroll");
+    }
 </script>
 </body>
 </html>
