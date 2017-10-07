@@ -8,7 +8,7 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="keywords" content="ui,personas,ux,useful,affordable,ui design,usability,photography,film making, gymnastics, krishna chaitanya kotu, chaitanya gymnast, legacy pixels, funvilla's, gymnastics">
 
-		<title><?php wp_title(); ?></title>
+		<title>Krishna Chaitanya</title>
 		<?php wp_head(); ?>
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/inc/css/home.css">
 		<style>
