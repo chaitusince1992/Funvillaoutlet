@@ -19,7 +19,7 @@
 
                 </div>
                 <div class="align-self-center col-12 col-md-5 img-section">
-                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/inc/MyLogos/krish-logo.svg ?>" srcset="" alt="WM branding">
+                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/inc/MyLogos/krish-logo.svg" srcset="" alt="Krish Image">
                 </div>
             </div>
         </div>

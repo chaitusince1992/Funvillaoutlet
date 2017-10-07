@@ -25,7 +25,7 @@
 		<section class="page-wrapper" id="wrapper">
 			<div class="spinner">
 				<div class="spin-holder">
-					<img src="<?php echo get_template_directory_uri(); ?>/inc/MyLogos/pageLoader.gif ?>" alt="Loading Krishna's World" />
+					<img src="<?php echo get_template_directory_uri(); ?>/inc/MyLogos/pageLoader.gif" alt="Loading Krishna's World" />
 				</div>
 			</div>
 			<!-- Home Header -->
